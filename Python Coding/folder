@@ -1,1 +1,219 @@
-
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPuL/b+IBbEnm/nEZp2u7cm",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/SeionixAi/RL-B101-Abin-Raj-K/blob/main/Python%20Coding/folder\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Basic Program"
+      ],
+      "metadata": {
+        "id": "Shhl1E3zD8Ua"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = input(\"Enter your name: \")\n",
+        "age = int(input(\"Enter your age: \"))\n",
+        "\n",
+        "print(f\"My name is {name} and I am {age} years old.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0bgmXrGND3D7",
+        "outputId": "f8e58498-78b3-4510-ca14-9367af1b6648"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your name: Abin\n",
+            "Enter your age: 22\n",
+            "My name is Abin and I am 22 years old.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Even or Odd"
+      ],
+      "metadata": {
+        "id": "Cqt1aNu3EG-a"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Enter a number: \"))\n",
+        "if num % 2 == 0:\n",
+        "  print(\"Even number\")\n",
+        "else:\n",
+        "  print(\"Odd number\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XbiHA8QgEVsE",
+        "outputId": "558b206f-f9d4-4ca8-c0c8-5bed758e9a9e"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 6\n",
+            "Even number\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "List Operation"
+      ],
+      "metadata": {
+        "id": "I9fDX5X6ExZC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numbers = [10, 20, 30, 40, 50]\n",
+        "\n",
+        "print(\"Sum:\", sum(numbers))\n",
+        "print(\"Max:\", max(numbers))\n",
+        "print(\"Min:\", min(numbers))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iZ731l5VE0SS",
+        "outputId": "b0f8e60d-84b3-44e8-8f74-74936c9e3271"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Sum: 150\n",
+            "Max: 50\n",
+            "Min: 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Function Example"
+      ],
+      "metadata": {
+        "id": "GLb_TKIHE4P6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def square(num):\n",
+        "  return num * num\n",
+        "\n",
+        "print(square(5))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "x55lk4LXE7C7",
+        "outputId": "819f6ee9-5546-472d-b73c-e2960716927f"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "25\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Loop Task\n"
+      ],
+      "metadata": {
+        "id": "HDvu26gSFipK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(1, 11):\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "g115aK9VFmKE",
+        "outputId": "31224d93-c89a-4618-f80c-ba53071b3211"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
